@@ -1,0 +1,1637 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+    <META charset="UTF-8">
+    <META name="keywords" content="">
+    <META name="description"
+          content="いつでもどこでもカンタン予約！九州・山陽新幹線を中心にJR九州・JR西日本の特急列車のきっぷをインターネットで予約できます。空席状況も照会でき、予約もスピーディー。また、ネット限定の割引きっぷもあり、とてもおトクです。">
+    <META http-equiv="X-UA-Compatible" content="ie=edge">
+    <TITLE>列車・きっぷ選択</TITLE>
+</HEAD>
+
+<BODY>
+<!--==WRAP==-->
+<DIV class="wrap" id="wrap">
+    <!--▼ HEADER ▼-->
+    <div id="Head">
+        <div class="head_top_web">
+            <h1><a href="/jr/pc/TopMenu"><img src="/jr/pc/reserve/img/jr_logo_02.png"
+                                              alt="九州旅客鉄道株式会社　列車予約"></a></h1>
+            <div class="head_top_link">
+                <ul class="head_top_point">
+                    <li><a href="https://www.jrkyushu.co.jp/contact/" target="_blank"><span>よくあるご質問</span></a>
+                    </li>
+                    <li><a href="https://www.jrkyushu.co.jp/railway/netyoyaku/index.html"
+                           target="_blank"><span>ご利用案内</span></a></li>
+                </ul>
+            </div>
+            <p class="jrq_logo cursorPointer" onclick="javascript:window.open('https://www.jrkyushu.co.jp/');"><img
+                    src="/jr/pc/reserve/img/jrq_logo.png?201811091050" alt="JR九州"></p>
+        </div>
+    </div>
+    <!--▲ HEADER ▲-->
+    <DIV class="container" id="container">
+        <!--STEP-->
+        <DIV class="step step5">
+            <UL>
+                <LI class="cr"><span>列車・きっぷ</span></LI>
+                <li><span>座席</span></li>
+                <li><span>支払方法</span></li>
+                <li><span>確認</span></li>
+                <li><span>完了</span></li>
+            </UL>
+        </DIV>
+        <!--/STEP-->
+        <!--ページタイトル-->
+        <DIV class="pageMeta">
+            <DIV class="pageMetaIn">
+                <H2 class="pageTtl">列車・きっぷ選択</H2>
+                <P class="pageSub">ご希望の列車・設備・きっぷを選んでください</P>
+            </DIV>
+        </DIV>
+        <!--/ページタイトル-->
+        <!--ticketInfoBlock-->
+        <DIV class="ticketInfoBlock">
+            <input type="hidden" name="searchCondition.departureStationCode" value="00F00B261279"
+                   id="departureStationCode"/>
+            <input type="hidden" name="searchCondition.arrivalStationCode" value="00F00B361329"
+                   id="arrivalStationCode"/>
+            <div class="ticketInfoGrid layout1" id="ticketInfoGridArea">
+                <div class="dateBox">
+                    <p class="date">
+                        10月27日（月）
+                    </p>
+                </div>
+                <div class="numBox">
+                    <P class="num">
+                        おとな<SPAN class="adult">4</SPAN>人&nbsp;&nbsp;&nbsp;
+                    </P>
+                </div>
+                <div class="dspChildPriceBox">
+                    <P class="dspChildPrice">
+                        <input type="checkbox" id="checkChildAmount" class="checkStyle1">
+                        <label for="checkChildAmount">こども料金を表示</label>
+                    </P>
+                    <div class="commentChildAmountBox">
+                        <P class="att" id="commentChildAmount" style="display:none;">
+                            <span style="font-size:13px;">（ ）は、こどものおねだん</span>
+                        </P>
+                    </div>
+                </div>
+                <UL class="fromToBox">
+                    <LI class="from">
+                            <SPAN class="almB">
+                                博多
+                            </SPAN>
+                    </LI>
+                    <LI class="to">
+                            <SPAN class="almB">
+                                由布院
+                            </SPAN>
+                    </LI>
+                </UL>
+                <div id="disabilityDiscountsArea"></div>
+                <div class="tokudaiBaggageBox">
+                    <div class="checkbox">
+                        <P class="checkBaggage">
+                            <input type="checkbox" id="checkBaggage" class="checkStyle1" checked="">
+                            <label for="checkBaggage">特大荷物スペース/コーナーつき座席を表示</label>
+                        </P>
+                    </div>
+                    <div class="tokudaiBaggageLinkBox">
+                        <a href="https://www.jrkyushu.co.jp/railway/ticket/rule/tokudai_baggage/" target="_blank"
+                           style="float: right; font-size: 14px; font-weight: bold;">特大荷物スペース/コーナーつき座席</a>
+                    </div>
+                </div>
+            </div>
+        </DIV>
+        <!--/ticketInfoBlock-->
+        <DIV class="contents" id="contents">
+            <!--列車・きっぷ選択-->
+            <DIV class="trainSummary">
+                <!--ticketSummary-->
+                <DIV class="ticketSummary">
+                    <TABLE>
+                        <TBODY>
+                        <TR>
+                            <TH class="itemCap itemCapLine" rowspan="3">
+                                <DIV class="itemCapUnit" style="height: 195px;">
+                                    <P class="line">きっぷ</P>
+                                    <P class="column">列車</P>
+                                </DIV>
+                            </TH>
+                            <TD class="nameCell">きっぷ名</TD>
+                            <TD class="ticketCell">
+                                <table style="height: 100%;">
+                                    <tr style="height:40px;">
+                                        <td style="height:0px;">
+                                            <span id="planMessage"></span>
+                                        </td>
+                                    </tr>
+                                    <tr style="max-height: 65px;min-height: 50px;height: 60px;">
+                                        <td style="border-bottom: none;vertical-align: bottom;">
+                                            <P class="mT5 mB5">
+                                                <IMG src="/jr/pc/reserve/img/common/icon_ticket_normal.png"
+                                                     title="通常のきっぷ" id="ticketImage" alt="通常のきっぷ">
+                                            </P>
+                                        </td>
+                                    </tr>
+                                    <tr style="max-height: 65px;min-height: 48px;">
+                                        <td style="border-top: none;vertical-align: top;">
+                                            通常の<br>きっぷ
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 20px;">
+                                        <td style="border: none;">
+                                            <P class="mT5"></P>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </TD>
+                            <TD class="ticketCell">
+                                <table style="height: 100%;">
+                                    <tr style="height:40px;">
+                                        <td style="height:0px;">
+                                            <span id="planMessage">JQｶｰﾄﾞ<br>限定</span>
+                                        </td>
+                                    </tr>
+                                    <tr style="max-height: 65px;min-height: 50px;height: 60px;">
+                                        <td style="border-bottom: none;vertical-align: bottom;">
+                                            <P class="mT5 mB5">
+                                                <IMG src="/jr/pc/reserve/img/common/icon_ticket_eticket_jqcard.png"
+                                                     title="ｅきっぷ" id="ticketImage" alt="通常のきっぷ">
+                                            </P>
+                                        </td>
+                                    </tr>
+                                    <tr style="max-height: 65px;min-height: 48px;">
+                                        <td style="border-top: none;vertical-align: top;">
+                                            ｅきっぷ
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 20px;">
+                                        <td style="border: none;">
+                                            <P class="mT5">
+                                                <a href="https://www.jrkyushu-kippu.jp/fare/ticket/2" target="_blank"
+                                                   style="line-height:0;">説明</a>
+                                            </P>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </TD>
+                            <TD class="ticketCell">
+                                <table style="height: 100%;">
+                                    <tr style="height:40px;">
+                                        <td style="height:0px;">
+                                            <span id="planMessage"></span>
+                                        </td>
+                                    </tr>
+                                    <tr style="max-height: 65px;min-height: 50px;height: 60px;">
+                                        <td style="border-bottom: none;vertical-align: bottom;">
+                                            <P class="mT5 mB5">
+                                                <IMG src="/jr/pc/reserve/img/common/icon_ticket_kyusyunet.png"
+                                                     title="九州ネットきっぷ" id="ticketImage" alt="通常のきっぷ">
+                                            </P>
+                                        </td>
+                                    </tr>
+                                    <tr style="max-height: 65px;min-height: 48px;">
+                                        <td style="border-top: none;vertical-align: top;">
+                                            九州ネットきっぷ
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 20px;">
+                                        <td style="border: none;">
+                                            <P class="mT5">
+                                                <a href="https://www.jrkyushu-kippu.jp/fare/ticket/123" target="_blank"
+                                                   style="line-height:0;">説明</a>
+                                            </P>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </TD>
+                            <td class="ticketCell"></td>
+                            <td class="ticketCell"></td>
+                            <td class="ticketCell"></td>
+                            <td class="ticketCell"></td>
+                            <td class="ticketCell"></td>
+                            <td class="ticketCell"></td>
+                            <td class="ticketCell"></td>
+                        </TR>
+                        <TR>
+                            <TD class="buyCell">
+                                <P>
+                                            <SPAN id="isNotPreKeep">
+                                                <SPAN id="dispCanChange"><SPAN
+                                                        class="buyBefore">受取前変更</SPAN><BR></SPAN>
+                                                <SPAN class="buyLimit">購入期限</SPAN>
+                                            </SPAN>
+                                    <SPAN id="isPreKeep"></SPAN>
+                                </P>
+                            </TD>
+                            <TD class="buyCell">
+                                <P>
+                                            <SPAN id="isNotPreKeep">
+                                                <SPAN id="dispCanChange"><SPAN class="buyBefore">可</SPAN><BR></SPAN>
+                                                <SPAN class="buyLimit">当日まで</SPAN>
+                                            </SPAN>
+                                    <SPAN id="isPreKeep"></SPAN>
+                                </P>
+                            </TD>
+                            <TD class="buyCell">
+                                <P>
+                                            <SPAN id="isNotPreKeep">
+                                                <SPAN id="dispCanChange"><SPAN class="buyBefore">可</SPAN><BR></SPAN>
+                                                <SPAN class="buyLimit">当日まで</SPAN>
+                                            </SPAN>
+                                    <SPAN id="isPreKeep"></SPAN>
+                                </P>
+                            </TD>
+                            <TD class="buyCell">
+                                <P>
+                                            <SPAN id="isNotPreKeep">
+                                                <SPAN id="dispCanChange"><SPAN class="buyBefore">可</SPAN><BR></SPAN>
+                                                <SPAN class="buyLimit">当日まで</SPAN>
+                                            </SPAN>
+                                    <SPAN id="isPreKeep"></SPAN>
+                                </P>
+                            </TD>
+                            <TD class="buyCell">
+                                <P>
+                                    <SPAN class="buyBefore"></SPAN><BR>
+                                    <SPAN class="buyLimit"></SPAN>
+                                </P>
+                            </TD>
+                            <TD class="buyCell">
+                                <P>
+                                    <SPAN class="buyBefore"></SPAN><BR>
+                                    <SPAN class="buyLimit"></SPAN>
+                                </P>
+                            </TD>
+                            <TD class="buyCell">
+                                <P>
+                                    <SPAN class="buyBefore"></SPAN><BR>
+                                    <SPAN class="buyLimit"></SPAN>
+                                </P>
+                            </TD>
+                            <TD class="buyCell">
+                                <P>
+                                    <SPAN class="buyBefore"></SPAN><BR>
+                                    <SPAN class="buyLimit"></SPAN>
+                                </P>
+                            </TD>
+                            <TD class="buyCell">
+                                <P>
+                                    <SPAN class="buyBefore"></SPAN><BR>
+                                    <SPAN class="buyLimit"></SPAN>
+                                </P>
+                            </TD>
+                            <TD class="buyCell">
+                                <P>
+                                    <SPAN class="buyBefore"></SPAN><BR>
+                                    <SPAN class="buyLimit"></SPAN>
+                                </P>
+                            </TD>
+                            <TD class="buyCell">
+                                <P>
+                                    <SPAN class="buyBefore"></SPAN><BR>
+                                    <SPAN class="buyLimit"></SPAN>
+                                </P>
+                            </TD>
+                        </TR>
+                        </TBODY>
+                    </TABLE>
+                </DIV>
+                <!--/ticketSummary-->
+                <!--timeSummary-->
+                <DIV class="timeSummary" id="timeSummary">
+                    <!--列車1-->
+                    <TABLE class="tableContent">
+                        <TBODY class="TBODY">
+                        <TR id="dispCheckFirst" class="">
+                            <TH rowspan="3" id="rowspanTh" class="timeCap">
+                                <DIV class="timeCapUnit">
+                                    <DIV class="timeNum">
+                                        <P class="num">
+                                            1
+                                        </P>
+                                        <UL class="fromToBox">
+                                            <LI class="from">16:15</LI>
+                                            <LI class="to">19:15</LI>
+                                        </UL>
+                                    </DIV>
+                                    <DIV class="ridePath">
+                                        <DIV class="rideMeta">
+                                            <P>
+                                                乗車日 10月27日（月）
+                                            </P>
+                                            <P class="rideTransfer">
+                                                乗換2回
+                                            </P>
+                                            <P class="rideRequired">
+                                                所要時間3:00
+                                            </P>
+                                            <P class="rideTime">
+                                                距離 240.9Km
+                                            </P>
+                                        </DIV>
+                                    </DIV>
+                                    <DIV class="rideTable">
+                                        <DIV class="rideLabel">
+                                            <DIV class="time">
+                                                <P class="dpt">
+                                                    16:15
+                                                </P>
+                                            </DIV>
+                                            <P class="name">
+                                                博多
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideDetail">
+                                            <P class="trainName">
+                                                新幹線のぞみ４８号
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideLabel">
+                                            <DIV class="time">
+                                                <P class="arr">
+                                                    16:30
+                                                </P>
+                                                <P class="dpt">
+                                                    16:43
+                                                </P>
+                                            </DIV>
+                                            <P class="name">
+                                                小倉
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideDetail">
+                                            <P class="trainName">
+                                                特急ソニック３７号
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideLabel">
+                                            <DIV class="time">
+                                                <P class="arr">
+                                                    18:05
+                                                </P>
+                                                <P class="dpt">
+                                                    18:17
+                                                </P>
+                                            </DIV>
+                                            <P class="name">
+                                                大分
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideDetail">
+                                            <P class="trainName">
+                                                久大本線（由布院行き）
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideLabel">
+                                            <DIV class="time">
+                                                <P class="arr">
+                                                    19:15
+                                                </P>
+                                            </DIV>
+                                            <P class="name">
+                                                由布院
+                                            </P>
+                                        </DIV>
+                                    </DIV>
+                                    <form id="consumer_route_SearchResultForm" name="consumer_route_SearchResultForm"
+                                          class="formChange_01" action="/jr/pc/route/ChangeEquipment" method="post">
+                                        <DIV class="btn btnBdrRed rideBtn">
+                                            <P>
+                                                <input value="5" type="hidden" name="nowPageCtrl" id="nowPageCtrl">
+                                                <input value="" type="hidden" name="loginHashId" id="loginHashId">
+                                                <input value="MWx0QrOXeG" type="hidden" name="courseGuidanceHashId"
+                                                       id="courseGuidanceHashId">
+                                                <input type="hidden" name="courseNo" value="01"/>
+                                                <a href="javascript:void(0);"
+                                                   onclick="javascript:formSubmit2($('.formChange_01')[0], '/jr/pc/route/ChangeEquipment', null);return false;"><SPAN>列車ごとに設備を変更する</SPAN></a>
+                                            </P>
+                                        </DIV>
+                                        <div>
+                                            <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                   value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                        </div>
+                                    </form>
+                                </DIV>
+                            </TH>
+                            <span id="equipmentCell">
+                                        <TD class="icoCell">
+                                            <UL class="ico">
+                                                <LI>
+                                                    <IMG alt="グリーン車"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_green.png">
+                                                </LI>
+                                                <LI>
+                                                    <IMG alt="禁煙"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_nosmorking.png">
+                                                </LI>
+                                            </UL>
+                                            <P class="txt">
+                                                グリーン車
+                                                <BR>
+                                                禁煙
+                                            </P>
+                                        </TD>
+                                        <span id="matrixTicketCell">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_01_02_010_0_01_0" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="通常のきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_01_02_010_0_01_0')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrl">
+                                                        <DIV class="mark remain" id="ticketDiv">
+                                                            <P class="status">
+                                                                △
+                                                            </P>
+                                                            <P class="price">
+                                                                13,150円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (8,620円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrl">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="010"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="01"/>
+                                                            <input type="hidden" name="courseNo" value="01"/>
+                                                            <input type="hidden" name="routeNo" value="02"/>
+                                                            <input type="hidden" name="equipmentType" value="0"/>
+                                                            <input type="hidden" name="equipmentsKind" value="1010000"/>
+                                                            <input type="hidden" name="equipPattern" value="01"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCell">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_01_02_020_0_02_0" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="ｅきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_01_02_020_0_02_0')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrl">
+                                                        <DIV class="mark remain" id="ticketDiv">
+                                                            <P class="status">
+                                                                △
+                                                            </P>
+                                                            <P class="price">
+                                                                12,990円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (8,480円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrl">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="020"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="02"/>
+                                                            <input type="hidden" name="courseNo" value="01"/>
+                                                            <input type="hidden" name="routeNo" value="02"/>
+                                                            <input type="hidden" name="equipmentType" value="0"/>
+                                                            <input type="hidden" name="equipmentsKind" value="1010000"/>
+                                                            <input type="hidden" name="equipPattern" value="01"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCell">
+                                            <TD class="markCell">
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                    </span><span id="equipmentCell">
+                                    </span><span id="equipmentCell">
+                                    </span>
+                        </TR>
+                        <span id="equipmentCell">
+                                </span><span id="equipmentCell">
+                                    <TR id="dispCheckSecond" class="dispCheckSecond">
+                                        <TD class="icoCell">
+                                            <UL class="ico">
+                                                <LI>
+                                                    <IMG alt="指定席"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_reserved.png">
+                                                </LI>
+                                                <LI>
+                                                    <IMG alt="禁煙"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_nosmorking.png">
+                                                </LI>
+                                            </UL>
+                                            <P class="txt">
+                                                指定席
+                                                <BR>
+                                                禁煙
+                                            </P>
+                                        </TD>
+                                        <span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_01_02_010_0_01_15" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="通常のきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_01_02_010_0_01_15')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrlNF">
+                                                        <DIV id="ticketDivNF" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                10,110円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (5,040円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrlNF">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="010"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="01"/>
+                                                            <input type="hidden" name="courseNo" value="01"/>
+                                                            <input type="hidden" name="routeNo" value="02"/>
+                                                            <input type="hidden" name="equipmentType" value="15"/>
+                                                            <input type="hidden" name="equipmentsKind" value="3010000"/>
+                                                            <input type="hidden" name="equipPattern" value="02"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_01_02_020_0_02_15" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="ｅきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_01_02_020_0_02_15')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrlNF">
+                                                        <DIV id="ticketDivNF" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                9,490円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (4,730円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrlNF">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="020"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="02"/>
+                                                            <input type="hidden" name="courseNo" value="01"/>
+                                                            <input type="hidden" name="routeNo" value="02"/>
+                                                            <input type="hidden" name="equipmentType" value="15"/>
+                                                            <input type="hidden" name="equipmentsKind" value="3010000"/>
+                                                            <input type="hidden" name="equipPattern" value="02"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                    </TR>
+                                </span><span id="equipmentCell">
+                                    <TR id="dispCheckSecond" class="dispCheckSecond">
+                                        <TD class="icoCell">
+                                            <UL class="ico">
+                                                <LI>
+                                                    <IMG alt="自由席"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_free.png">
+                                                </LI>
+                                            </UL>
+                                            <P class="txt">
+                                                自由席
+                                            </P>
+                                        </TD>
+                                        <span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_01_02_010_0_01_30" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="通常のきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_01_02_010_0_01_30')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrlNF">
+                                                        <DIV id="ticketDivNF" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                7,960円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (3,970円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrlNF">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="010"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="01"/>
+                                                            <input type="hidden" name="courseNo" value="01"/>
+                                                            <input type="hidden" name="routeNo" value="02"/>
+                                                            <input type="hidden" name="equipmentType" value="30"/>
+                                                            <input type="hidden" name="equipmentsKind" value="9000000"/>
+                                                            <input type="hidden" name="equipPattern" value="03"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_01_02_020_0_02_30" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="ｅきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_01_02_020_0_02_30')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrlNF">
+                                                        <DIV id="ticketDivNF" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                7,960円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (3,970円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrlNF">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="020"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="02"/>
+                                                            <input type="hidden" name="courseNo" value="01"/>
+                                                            <input type="hidden" name="routeNo" value="02"/>
+                                                            <input type="hidden" name="equipmentType" value="30"/>
+                                                            <input type="hidden" name="equipmentsKind" value="9000000"/>
+                                                            <input type="hidden" name="equipPattern" value="03"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                    </TR>
+                                </span>
+                        </TBODY>
+                    </TABLE>
+                    <!--/列車1-->
+                    <!--列車1-->
+                    <TABLE class="tableContent">
+                        <TBODY class="TBODY">
+                        <TR id="dispCheckFirst" class="">
+                            <TH rowspan="3" id="rowspanTh" class="timeCap">
+                                <DIV class="timeCapUnit">
+                                    <DIV class="timeNum">
+                                        <P class="num">
+                                            2
+                                        </P>
+                                        <UL class="fromToBox">
+                                            <LI class="from">17:36</LI>
+                                            <LI class="to">20:23</LI>
+                                        </UL>
+                                    </DIV>
+                                    <DIV class="ridePath">
+                                        <DIV class="rideMeta">
+                                            <P>
+                                                乗車日 10月27日（月）
+                                            </P>
+                                            <P class="rideTransfer">
+                                                乗換2回
+                                            </P>
+                                            <P class="rideRequired">
+                                                所要時間2:47
+                                            </P>
+                                            <P class="rideTime">
+                                                距離 134.8Km
+                                            </P>
+                                        </DIV>
+                                    </DIV>
+                                    <DIV class="rideTable">
+                                        <DIV class="rideLabel">
+                                            <DIV class="time">
+                                                <P class="dpt">
+                                                    17:36
+                                                </P>
+                                            </DIV>
+                                            <P class="name">
+                                                博多
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideDetail">
+                                            <P class="trainName">
+                                                新幹線さくら４１１号
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideLabel">
+                                            <DIV class="time">
+                                                <P class="arr">
+                                                    17:53
+                                                </P>
+                                                <P class="dpt">
+                                                    18:02
+                                                </P>
+                                            </DIV>
+                                            <P class="name">
+                                                久留米
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideDetail">
+                                            <P class="trainName">
+                                                久大本線（日田行き）
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideLabel">
+                                            <DIV class="time">
+                                                <P class="arr">
+                                                    19:11
+                                                </P>
+                                                <P class="dpt">
+                                                    19:19
+                                                </P>
+                                            </DIV>
+                                            <P class="name">
+                                                日田
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideDetail">
+                                            <P class="trainName">
+                                                久大本線（大分行き）
+                                            </P>
+                                        </DIV>
+                                        <DIV class="rideLabel">
+                                            <DIV class="time">
+                                                <P class="arr">
+                                                    20:23
+                                                </P>
+                                            </DIV>
+                                            <P class="name">
+                                                由布院
+                                            </P>
+                                        </DIV>
+                                    </DIV>
+                                    <form id="consumer_route_SearchResultForm" name="consumer_route_SearchResultForm"
+                                          class="formChange_02" action="/jr/pc/route/ChangeEquipment" method="post">
+                                        <DIV class="btn btnBdrRed rideBtn">
+                                        </DIV>
+                                        <div>
+                                            <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                   value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                        </div>
+                                    </form>
+                                </DIV>
+                            </TH>
+                            <span id="equipmentCell">
+                                        <TD class="icoCell">
+                                            <UL class="ico">
+                                                <LI>
+                                                    <IMG alt="指定席"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_reserved.png">
+                                                </LI>
+                                                <LI>
+                                                    <IMG alt="禁煙"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_nosmorking.png">
+                                                </LI>
+                                            </UL>
+                                            <P class="txt">
+                                                指定席
+                                                <BR>
+                                                禁煙
+                                            </P>
+                                        </TD>
+                                        <span id="matrixTicketCell">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_02_01_010_0_01_15" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="通常のきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_02_01_010_0_01_15')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrl">
+                                                        <DIV id="ticketDiv" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                5,220円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (2,610円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrl">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="010"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="01"/>
+                                                            <input type="hidden" name="courseNo" value="02"/>
+                                                            <input type="hidden" name="routeNo" value="01"/>
+                                                            <input type="hidden" name="equipmentType" value="15"/>
+                                                            <input type="hidden" name="equipmentsKind" value="3010000"/>
+                                                            <input type="hidden" name="equipPattern" value="01"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCell">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_02_01_020_0_02_15" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="ｅきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_02_01_020_0_02_15')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrl">
+                                                        <DIV id="ticketDiv" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                5,150円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (2,570円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrl">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="020"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="02"/>
+                                                            <input type="hidden" name="courseNo" value="02"/>
+                                                            <input type="hidden" name="routeNo" value="01"/>
+                                                            <input type="hidden" name="equipmentType" value="15"/>
+                                                            <input type="hidden" name="equipmentsKind" value="3010000"/>
+                                                            <input type="hidden" name="equipPattern" value="01"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCell">
+                                            <TD class="markCell">
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                    </span><span id="equipmentCell">
+                                    </span><span id="equipmentCell">
+                                    </span>
+                        </TR>
+                        <span id="equipmentCell">
+                                </span><span id="equipmentCell">
+                                    <TR class="dispCheckSecond baggage" id="dispCheckSecond">
+                                        <TD class="icoCell">
+                                            <UL class="ico">
+                                                <LI>
+                                                    <IMG alt="指定席"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_reserved.png">
+                                                </LI>
+                                                <LI>
+                                                    <IMG alt="禁煙"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_nosmorking.png">
+                                                </LI>
+                                            </UL>
+                                            <P class="txt">
+                                                指定席
+                                                <BR>
+                                                禁煙
+                                                <BR>
+                                                荷物スペースつき
+                                            </P>
+                                        </TD>
+                                        <span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <DIV class="mark full">
+                                                    <P class="status">×</P>
+                                                    <P class="statusTxt">満席</P>
+                                                </DIV>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <DIV class="mark full">
+                                                    <P class="status">×</P>
+                                                    <P class="statusTxt">満席</P>
+                                                </DIV>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                    </TR>
+                                </span><span id="equipmentCell">
+                                    <TR id="dispCheckSecond" class="dispCheckSecond">
+                                        <TD class="icoCell">
+                                            <UL class="ico">
+                                                <LI>
+                                                    <IMG alt="自由席"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_free.png">
+                                                </LI>
+                                            </UL>
+                                            <P class="txt">
+                                                自由席
+                                            </P>
+                                        </TD>
+                                        <span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_02_01_010_0_01_30" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="通常のきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_02_01_010_0_01_30')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrlNF">
+                                                        <DIV id="ticketDivNF" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                4,170円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (2,080円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrlNF">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="010"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="01"/>
+                                                            <input type="hidden" name="courseNo" value="02"/>
+                                                            <input type="hidden" name="routeNo" value="01"/>
+                                                            <input type="hidden" name="equipmentType" value="30"/>
+                                                            <input type="hidden" name="equipmentsKind" value="9000000"/>
+                                                            <input type="hidden" name="equipPattern" value="02"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_02_01_020_0_02_30" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="ｅきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_02_01_020_0_02_30')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrlNF">
+                                                        <DIV id="ticketDivNF" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                4,170円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (2,080円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrlNF">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="020"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="02"/>
+                                                            <input type="hidden" name="courseNo" value="02"/>
+                                                            <input type="hidden" name="routeNo" value="01"/>
+                                                            <input type="hidden" name="equipmentType" value="30"/>
+                                                            <input type="hidden" name="equipmentsKind" value="9000000"/>
+                                                            <input type="hidden" name="equipPattern" value="02"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                    </TR>
+                                </span>
+                        </TBODY>
+                    </TABLE>
+                    <!--/列車1-->
+                    <!--列車1-->
+                    <TABLE class="tableContent">
+                        <TBODY class="TBODY">
+                        <TR id="dispCheckFirst" class="">
+                            <TH rowspan="2" id="rowspanTh" class="timeCap">
+                                <DIV class="timeCapUnit">
+                                    <DIV class="timeNum">
+                                        <P class="num">
+                                            3
+                                        </P>
+                                        <UL class="fromToBox">
+                                            <LI class="from">18:30</LI>
+                                            <LI class="to">20:49</LI>
+                                        </UL>
+                                    </DIV>
+                                    <DIV class="rideInfo">
+                                        <P class="rideTime">
+                                            乗車日 10月27日（月）
+                                        </P>
+                                        <P class="rideTime">
+                                            乗車時間 2:19
+                                        </P>
+                                        <P class="rideTime">
+                                            距離 134.8Km
+                                        </P>
+                                        <P class="rideUnit">
+                                            特急ゆふ５号
+                                        </P>
+                                    </DIV>
+                                </DIV>
+                            </TH>
+                            <span id="equipmentCell">
+                                        <TD class="icoCell">
+                                            <UL class="ico">
+                                                <LI>
+                                                    <IMG alt="指定席"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_reserved.png">
+                                                </LI>
+                                                <LI>
+                                                    <IMG alt="禁煙"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_nosmorking.png">
+                                                </LI>
+                                            </UL>
+                                            <P class="txt">
+                                                指定席
+                                                <BR>
+                                                禁煙
+                                            </P>
+                                        </TD>
+                                        <span id="matrixTicketCell">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_03_01_010_0_01_15" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="通常のきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_03_01_010_0_01_15')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrl">
+                                                        <DIV id="ticketDiv" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                5,630円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (2,810円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrl">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="010"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="01"/>
+                                                            <input type="hidden" name="courseNo" value="03"/>
+                                                            <input type="hidden" name="routeNo" value="01"/>
+                                                            <input type="hidden" name="equipmentType" value="15"/>
+                                                            <input type="hidden" name="equipmentsKind" value="3010000"/>
+                                                            <input type="hidden" name="equipPattern" value="01"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCell">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_03_01_020_0_02_15" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="ｅきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_03_01_020_0_02_15')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrl">
+                                                        <DIV id="ticketDiv" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                5,100円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (2,550円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrl">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="020"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="02"/>
+                                                            <input type="hidden" name="courseNo" value="03"/>
+                                                            <input type="hidden" name="routeNo" value="01"/>
+                                                            <input type="hidden" name="equipmentType" value="15"/>
+                                                            <input type="hidden" name="equipmentsKind" value="3010000"/>
+                                                            <input type="hidden" name="equipPattern" value="01"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCell">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_03_01_062_1_03_15" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="九州ネットきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_03_01_062_1_03_15')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrl">
+                                                        <DIV id="ticketDiv" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                5,100円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (2,550円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrl">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="062"/>
+                                                            <input type="hidden" name="ticketSubNo" value="1"/>
+                                                            <input type="hidden" name="referralsNo" value="03"/>
+                                                            <input type="hidden" name="courseNo" value="03"/>
+                                                            <input type="hidden" name="routeNo" value="01"/>
+                                                            <input type="hidden" name="equipmentType" value="15"/>
+                                                            <input type="hidden" name="equipmentsKind" value="3010000"/>
+                                                            <input type="hidden" name="equipPattern" value="01"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg">
+                                                    <img class="qrTicketItem"
+                                                         src="/jr/pc/reserve/img/common/qr_ticketless_transparent.png"
+                                                         alt="アイコン">
+                                                </span>
+                                            </TD>
+                                        </span>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                    </span><span id="equipmentCell">
+                                    </span>
+                        </TR>
+                        <span id="equipmentCell">
+                                </span><span id="equipmentCell">
+                                    <TR id="dispCheckSecond" class="dispCheckSecond">
+                                        <TD class="icoCell">
+                                            <UL class="ico">
+                                                <LI>
+                                                    <IMG alt="自由席"
+                                                         src="/jr/pc/reserve/img/common/icon_seat_free.png">
+                                                </LI>
+                                            </UL>
+                                            <P class="txt">
+                                                自由席
+                                            </P>
+                                        </TD>
+                                        <span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_03_01_010_0_01_30" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="通常のきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_03_01_010_0_01_30')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrlNF">
+                                                        <DIV id="ticketDivNF" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                5,100円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (2,550円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrlNF">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="010"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="01"/>
+                                                            <input type="hidden" name="courseNo" value="03"/>
+                                                            <input type="hidden" name="routeNo" value="01"/>
+                                                            <input type="hidden" name="equipmentType" value="30"/>
+                                                            <input type="hidden" name="equipmentsKind" value="9000000"/>
+                                                            <input type="hidden" name="equipPattern" value="02"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_03_01_020_0_02_30" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="ｅきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_03_01_020_0_02_30')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrlNF">
+                                                        <DIV id="ticketDivNF" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                5,100円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (2,550円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrlNF">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="020"/>
+                                                            <input type="hidden" name="ticketSubNo" value="0"/>
+                                                            <input type="hidden" name="referralsNo" value="02"/>
+                                                            <input type="hidden" name="courseNo" value="03"/>
+                                                            <input type="hidden" name="routeNo" value="01"/>
+                                                            <input type="hidden" name="equipmentType" value="30"/>
+                                                            <input type="hidden" name="equipmentsKind" value="9000000"/>
+                                                            <input type="hidden" name="equipPattern" value="02"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg"></span>
+                                            </TD>
+                                        </span><span id="matrixTicketCellNF">
+                                            <TD class="markCell">
+                                                <form id="consumer_route_SearchResultForm"
+                                                      name="consumer_route_SearchResultForm"
+                                                      class="form_03_01_062_1_03_30" action="/jr/pc/route/SelectSeat"
+                                                      method="post">
+                                                    <A href="javascript:void(0);" title="九州ネットきっぷ"
+                                                       onclick="javascript: formSubmit2($('.form_03_01_062_1_03_30')[0] ,'/jr/pc/route/SelectSeat' ,null); return false;"
+                                                       id="forwardUrlNF">
+                                                        <DIV id="ticketDivNF" class="mark avail">
+                                                            <P class="status">
+                                                                ○
+                                                            </P>
+                                                            <P class="price">
+                                                                5,100円
+                                                            </P>
+                                                            <P class="priceChild" style="display:none;">
+                                                                (2,550円)
+                                                            </P>
+                                                            <input value="5" type="hidden" name="nowPageCtrl"
+                                                                   id="nowPageCtrlNF">
+                                                            <input value="" type="hidden" name="loginHashId"
+                                                                   id="loginHashId">
+                                                            <input value="MWx0QrOXeG" type="hidden"
+                                                                   name="courseGuidanceHashId"
+                                                                   id="courseGuidanceHashId">
+                                                            <input type="hidden" name="ticketNo" value="062"/>
+                                                            <input type="hidden" name="ticketSubNo" value="1"/>
+                                                            <input type="hidden" name="referralsNo" value="03"/>
+                                                            <input type="hidden" name="courseNo" value="03"/>
+                                                            <input type="hidden" name="routeNo" value="01"/>
+                                                            <input type="hidden" name="equipmentType" value="30"/>
+                                                            <input type="hidden" name="equipmentsKind" value="9000000"/>
+                                                            <input type="hidden" name="equipPattern" value="02"/>
+                                                        </DIV>
+                                                    </A>
+                                                    <div>
+                                                        <input type="hidden" name="_TRANSACTION_TOKEN"
+                                                               value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                                    </div>
+                                                </form>
+                                                <span id="qrTicketItemFlg">
+                                                    <img class="qrTicketItem"
+                                                         src="/jr/pc/reserve/img/common/qr_ticketless_transparent.png"
+                                                         alt="アイコン">
+                                                </span>
+                                            </TD>
+                                        </span>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                        <td class="markCell"></td>
+                                    </TR>
+                                </span>
+                        </TBODY>
+                    </TABLE>
+                    <!--/列車1-->
+                </DIV>
+                <!--/timeSummary-->
+            </DIV>
+            <!--/列車・きっぷ選択-->
+            <!--ページャー-->
+            <DIV class="pagerBlock">
+                <UL>
+                    <form id="consumer_route_StationEntryForm" name="consumer_route_StationEntryForm" class="nextForm"
+                          style="text-align:center" action="/jr/pc/route/SearchCourse/next" method="post">
+                        <input value="5" type="hidden" name="nowPageCtrl" id="nowPageCtrl">
+                        <input value="" type="hidden" name="loginHashId" id="loginHashId">
+                        <input value="MWx0QrOXeG" type="hidden" name="courseGuidanceHashId" id="courseGuidanceHashId">
+                        <LI class="next"><a href="javascript:void(0);" id="nextRoute"
+                                            onclick="javascript:formSubmit2($('.nextForm')[0], '/jr/pc/route/SearchCourse/next', null);showLoadingModal();return false;">次の時間帯</a>
+                        </LI>
+                        <div>
+                            <input type="hidden" name="_TRANSACTION_TOKEN"
+                                   value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                        </div>
+                    </form>
+                </UL>
+            </DIV>
+            <!--/ページャー-->
+            <form>
+                <!--アイコンの説明-->
+                <div id="infoBlock" class="icoExp">
+                    <h2>
+                        <a class="accordion_top">
+                            <span>アイコンの説明</span>
+                        </a>
+                    </h2>
+                    <div class="data">
+                        <p class="fwB fs16 mT20">空席状況について</p>
+                        <ul class="icoExpList">
+                            <li>
+                                <p class="img">
+                                    <img src="/jr/pc/reserve/img/common/icon_exp_avail.png" alt="空席あり">
+                                </p>
+                                <p class="cap">空席あり</p>
+                            </li>
+                            <li>
+                                <p class="img">
+                                    <img src="/jr/pc/reserve/img/common/icon_exp_remain.png" alt="残りわずか">
+                                </p>
+                                <p class="cap">残りわずか</p>
+                            </li>
+                            <li>
+                                <p class="img">
+                                    <img src="/jr/pc/reserve/img/common/icon_exp_full.png" alt="満席">
+                                </p>
+                                <p class="cap">満席</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/アイコンの説明-->
+            </form>
+            <DIV class="btnAreaB">
+                <UL>
+                    <LI class="btnC">
+                        <DIV class="btn btnBdrRed">
+                            <P>
+                                <a href="javascript:formBtnChange.submit()" id="btnChange"
+                                   class="change"><SPAN>検索条件を変更</SPAN></a>
+                            </P>
+                            <form id="formBtnChange" name="formBtnChange" action="/jr/pc/route/Top/backtoTop"
+                                  method="post">
+                                <input value="" type="hidden" name="loginHashId" id="loginHashId">
+                                <input value="MWx0QrOXeG" type="hidden" name="courseGuidanceHashId"
+                                       id="courseGuidanceHashId">
+                                <div>
+                                    <input type="hidden" name="_TRANSACTION_TOKEN"
+                                           value="globalToken~7e8cb9d0c39c864c2a434636a1352578~d1fb293d756eb24c3b93344b12b48a16"/>
+                                </div>
+                            </form>
+                        </DIV>
+                    </LI>
+                </UL>
+            </DIV>
+        </DIV>
+    </DIV>
+    <!--▲ CONTENTS ▲-->
+    <!--▼ FOOTER ▼-->
+    <div id="footer" class="footer">
+        <div class="footerIn">
+            <div class="copyRight">
+                <p>Copyright(C) Kyushu Railway Company All Rights Reserved.</p>
+            </div>
+            <div class="env">
+                <p>
+                    <a href="/jr/pc/usage#att5" target="_blank">推奨環境について</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--▲ FOOTER ▲-->
+    <!-- モーダル -->
+    <div id="modal_adultChild" class="modal-content">
+        <p class="btn-modal-close"><a href="javascript:void(0);" class="modal-close">閉じる</a></p>
+        <div class="inner">
+            <p class="ttl">おとな・こどもの区分について</p>
+            <p class="txt">
+                <span class="indent">おとな…12歳以上(12歳でも小学生は「こども」です)</span>
+                <span class="indent">こども…6歳～12歳未満(6歳でも小学校入学前は「幼児」です)</span>
+                <span class="indent">幼児　…1歳～6歳未満</span>
+                <span class="indent">乳児　…1歳未満</span>
+                <span class="indent">※幼児、乳児は無料ですが、次の場合は「こども」の運賃・料金が必要です。</span>
+                <span class="indent">　①おとなまたはこども1人に同伴される幼児の人数が2人を超えるとき(3人目からこどもの運賃・料金が必要です)</span>
+                <span class="indent">　②幼児・乳児が１人で指定席、グリーン席(自由席グリーン車を除く)、寝台等を利用するとき。</span>
+                <span class="indent">　③「幼児」が単独で旅行するとき。</span>
+            </p>
+        </div>
+    </div>
+</DIV>
+</BODY>
+
+</HTML>
