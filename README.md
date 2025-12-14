@@ -41,3 +41,19 @@ This is an example of configuration in Claude Desktop:
 ```
 
 * Change the path to your jar file.
+
+# Tech stack
+
+- **Language**: Kotlin 2.2.20 (JVM 21)
+- **MCP Framework**: [Model Context Protocol Kotlin SDK](https://github.com/modelcontextprotocol/kotlin-sdk) 0.7.2
+- **Server Framework**: [Ktor](https://ktor.io/) 3.3.1
+  - Content Negotiation
+  - Kotlinx Serialization (JSON)
+  - Dependency Injection
+  - YAML Configuration
+- **HTTP Client**: [OkHttp](https://square.github.io/okhttp/) 5.3.0
+- **HTML Parser**: [Ksoup](https://github.com/fleeksoft/ksoup) 0.2.5
+- **Build Tool**: Gradle with Kotlin DSL
+- **Logging**: SLF4J 2.0.17
+- **Packaging**: Shadow JAR plugin for creating fat JARs
+
